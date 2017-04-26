@@ -17,6 +17,12 @@ Tools installed:
 - dnsenum
 - smtp-user-enum
 - hydra
+- wpscan
+- snmpcheck
+- wafw00f
+- medusa
+- hping3
+- crunch
 
 It also includes:
 
@@ -45,8 +51,7 @@ Note that you may want to:
 Once the build process is over, get and enjoy a neat msf prompt with this command:
 
 ```bash
-sudo docker run -it -v ~/p0wnM3/:/tmp/data --name pentest pentest
-3#ocker run --rm -i -t -p 9990-9999:9990-9999 -v /home/<USER>/.msf4:/root/.msf4 -v /tmp/msf:/tmp/data --name msf phocean/msf
+sudo docker run -t -v ~/p0wnM3/:/tmp/data --name pentest pentest
 ```
 
 Explanations:
@@ -56,13 +61,3 @@ Explanations:
 - Similarly, we mount a */tmp/data folder* to exchange data (a dump from a successful exploit, for instance).
 
 Of course, it is up to you to adjust it to your taste or need.
-
-You can also give it full access to the host network:
-
-> Note that this can be **risky** as all services on your host, including those that listen on localhost, would be reachable from within the container, in case it is compromise.
-
-```bash
-docker run --rm -it --net=host -v /home/<USER>/.msf4:/root/.msf4 -v /tmp/msf:/tmp/data --name msf phocean/msf
-```
-
-At any time, you can exit, which only stops (suspend) the container.

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker exec -it `docker ps -a | grep pentest | cut -d" " -f1` wafw00f $@
+docker exec -it pentest wafw00f $@

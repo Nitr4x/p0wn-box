@@ -1,3 +1,0 @@
-#!/bin/bash
-
-docker exec -it `docker ps -a | grep pentest | cut -d" " -f1` snmpcheck $@
