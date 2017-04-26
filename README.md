@@ -59,6 +59,6 @@ sudo docker run -t -p 9990-9999:9990-9999 -v ~/p0wnM3/:/tmp/data --name pentest 
 Explanations:
 
 - We map the port range from 9990 to 9999 to our host (useful for reverse tcp connexion)
-- We mount a share folder to simplify the data exchange between the container and the host
+- We mount a shared folder to simplify the data exchange between the container and the host
 
 Of course, it is up to you to adjust it to your taste or need.
