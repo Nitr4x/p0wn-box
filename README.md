@@ -1,4 +1,4 @@
-# p0wnM3
+# p0wn-box
 
 # Purpose
 
@@ -50,7 +50,7 @@ Note that you may want to:
 
 # Run
 
-Once the build process is over, get and enjoy a neat msf prompt with this command:
+Once the build process is over, get and enjoy your tools as you were on a virtual machine !
 
 ```bash
 sudo docker run -t -p 9990-9999:9990-9999 -v ~/p0wnM3/:/tmp/data --name pentest pentest
