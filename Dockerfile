@@ -15,7 +15,7 @@ RUN apt-get update && apt-get -y install build-essential git libswitch-perl libl
 # Installing tools
 RUN apt-get -y install  dirb john p0f patator dotdotpwn enum4linux dnsenum smtp-user-enum wordlists hydra snmpcheck hping3 wafw00f crunch medusa set wpscan
 
-# Lauching postgresql
+# Setting and lauching postgresql
 ADD ./conf/database.sql /tmp/
 RUN /etc/init.d/postgresql start && su postgres -c "psql -f /tmp/database.sql"
 USER root
