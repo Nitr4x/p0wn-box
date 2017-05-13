@@ -45,7 +45,7 @@ Docker will download the Debian image and then execute the installation steps.
 
 Note that you may want to:
 
-- If you wish to change the container name, please, run the script init.sh in order to update the bin folder.
+- If you wish to change the container name, please, run the script rename.sh in order to update the bin folder.
 - To easily access each command, add the bin folder to your environment PATH.
 
 # Run
