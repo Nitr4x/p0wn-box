@@ -25,6 +25,7 @@ Tools installed:
 - crunch
 - setoolkit
 - metasploit
+- httrack
 
 It also includes:
 
