@@ -29,10 +29,13 @@ Tools installed:
 - SQLmap
 - nmap
 - SSLscan
+- joomscan
+- theharvester
 
 It also includes:
 
 - Wordlists from Kali Linux
+- Webshells from Kali Linux
 - A binary folder, allowing to easily run each binary independently
 - fish shell & tmux
 
