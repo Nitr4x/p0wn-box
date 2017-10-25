@@ -26,6 +26,9 @@ Tools installed:
 - setoolkit
 - metasploit
 - httrack
+- SQLmap
+- nmap
+- SSLscan
 
 It also includes:
 
