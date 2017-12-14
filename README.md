@@ -26,10 +26,18 @@ Tools installed:
 - setoolkit
 - metasploit
 - httrack
+- SQLmap
+- nmap
+- SSLscan
+- joomscan
+- theharvester
+- tcpdump
+- openvpn
 
 It also includes:
 
 - Wordlists from Kali Linux
+- Webshells from Kali Linux
 - A binary folder, allowing to easily run each binary independently
 - fish shell & tmux
 
