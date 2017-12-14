@@ -12,7 +12,7 @@ RUN gpg -a --export ED444FF07D8D0BF6 | apt-key add -
 RUN apt-get update && apt-get -y install build-essential git libswitch-perl liblwp-useragent-determined-perl wget tmux vim locales emacs python-pip net-tools
 
 # Installing tools
-RUN apt-get -y install  dirb john p0f patator dotdotpwn enum4linux dnsenum smtp-user-enum wordlists hydra snmpcheck hping3 wafw00f crunch medusa set wpscan httrack nmap sslscan sqlmap joomscan theharvester webshells
+RUN apt-get -y install  dirb john p0f patator dotdotpwn enum4linux dnsenum smtp-user-enum wordlists hydra snmpcheck hping3 wafw00f crunch medusa set wpscan httrack nmap sslscan sqlmap joomscan theharvester webshells tcpdump openvpn
 
 # Setting and lauching postgresql
 ADD ./conf/database.sql /tmp/

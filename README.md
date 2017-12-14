@@ -31,6 +31,8 @@ Tools installed:
 - SSLscan
 - joomscan
 - theharvester
+- tcpdump
+- openvpn
 
 It also includes:
 
