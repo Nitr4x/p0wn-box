@@ -3,7 +3,8 @@ FROM debian:jessie
 MAINTAINER Nitrax <nitrax@lokisec.fr>
 
 # Adding Kali repository
-RUN echo 'deb http://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list
+RUN echo 'deb http://repo.kali.org/kali kali-rolling main non-free contrib' >> /etc/apt/sources.list
+RUN echo 'deb-src http://repo.kali.org/kali kali-rolling main non-free contrib' >> /etc/apt/sources.list
 
 RUN gpg --keyserver pgpkeys.mit.edu --recv-key  ED444FF07D8D0BF6
 RUN gpg -a --export ED444FF07D8D0BF6 | apt-key add -
@@ -12,7 +13,7 @@ RUN gpg -a --export ED444FF07D8D0BF6 | apt-key add -
 RUN apt-get update && apt-get -y install build-essential git libswitch-perl liblwp-useragent-determined-perl wget tmux vim locales emacs python-pip net-tools
 
 # Installing tools
-RUN apt-get -y install  dirb john p0f patator dotdotpwn enum4linux dnsenum smtp-user-enum wordlists hydra snmpcheck hping3 wafw00f crunch medusa set wpscan httrack nmap sslscan sqlmap joomscan theharvester webshells tcpdump openvpn
+RUN apt-get -y install  dirb john p0f patator dotdotpwn enum4linux dnsenum smtp-user-enum wordlists hydra snmpcheck hping3 wafw00f crunch medusa set wpscan httrack nmap sslscan sqlmap joomscan theharvester webshells tcpdump openvpn nikto proxychains htop telnet
 
 # Setting and lauching postgresql
 ADD ./conf/database.sql /tmp/
