@@ -33,6 +33,10 @@ Tools installed:
 - theharvester
 - tcpdump
 - openvpn
+- nikto
+- telnet
+- proxychains
+- htop 
 
 It also includes:
 
