@@ -36,7 +36,8 @@ Tools installed:
 - nikto
 - telnet
 - proxychains
-- htop 
+- htop
+- DNS SOCKS Proxy
 
 It also includes:
 
@@ -67,7 +68,7 @@ Note that you may want to:
 Once the build process is over, get and enjoy your tools as you were on a virtual machine !
 
 ```bash
-sudo docker run -t -p 9990-9999:9990-9999 -v ~/p0wnM3/:/tmp/data --name pentest pentest
+sudo docker run -td -p 0.0.0.0:9990-9999:9990-9999 -v ~/p0wnM3/:/tmp/data --name pentest pentest
 ```
 
 Explanations:
