@@ -40,6 +40,16 @@ ADD conf/locale.gen /etc/
 ADD conf/.tmux.conf /root/
 RUN locale-gen
 
+# Setting proxy dns
+RUN git clone https://github.com/jtripper/dns-tcp-socks-proxy.git dns
+WORKDIR /opt/dns
+RUN make
+ADD conf/dns_proxy.conf /opt/dns/
+ADD conf/resolv.conf /opt/dns
+
+# Setting proxychains
+ADD conf/proxychains.conf /etc/
+
 # Setting shared folder
 VOLUME /tmp/data
 
