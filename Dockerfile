@@ -3,8 +3,8 @@ FROM debian:jessie
 MAINTAINER Nitrax <nitrax@lokisec.fr>
 
 # Adding Kali repository
-RUN echo 'deb http://repo.kali.org/kali kali-rolling main non-free contrib' >> /etc/apt/sources.list
-RUN echo 'deb-src http://repo.kali.org/kali kali-rolling main non-free contrib' >> /etc/apt/sources.list
+RUN echo 'deb http://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list
+RUN echo 'deb-src http://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list
 
 RUN gpg --keyserver pgpkeys.mit.edu --recv-key  ED444FF07D8D0BF6
 RUN gpg -a --export ED444FF07D8D0BF6 | apt-key add -
