@@ -46,6 +46,14 @@ It also includes:
 - A binary folder, allowing to easily run each binary independently
 - fish shell & tmux
 
+# Prebuild image
+
+You can pull the official image from the dockerhub registry using the following command:
+
+```bash
+docker pull nitr4x/reversing
+```
+
 # Build
 
 To build the container, just use this command:
